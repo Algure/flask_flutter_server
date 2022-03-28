@@ -23,17 +23,14 @@ def render_page_web():
 @app.route('/web/<path:name>')
 def return_flutter_doc(name):
 
-    dData = str(name).split('/')
+    datalist = str(name).split('/')
     DIR_NAME = FLUTTER_WEB_APP
 
-    if len(dData) > 1:
-        for i in range(0, len(dData) - 1):
-            DIR_NAME += '/' + dData[i]
+    if len(datalist) > 1:
+        for i in range(0, len(datalist) - 1):
+            DIR_NAME += '/' + datalist[i]
 
-    if ('#' in dData[-1]):
-        dData[-1] = 'index.html'
-
-    return send_from_directory(DIR_NAME, dData[-1])
+    return send_from_directory(DIR_NAME, datalist[-1])
 
 
 if __name__ == '__main__':
