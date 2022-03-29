@@ -10,7 +10,7 @@ This app sets the flutter application to be launched with the url: `[home_domain
 
 The following 2 steps would have to be followed to get this to work.
 
-### 1. Update index.html file
+### 1. Update index.html File
 
 Locate the following line in your index.html. file.
 
@@ -27,7 +27,7 @@ Replace this line with the following:
 Remember `[foo]` should be a single word of your choice.
 
 
-### 2. Update controller routes
+### 2. Update Controller Routes
 
 Locate the functions in your controller file or your app.py file that serve te flutter application. This repository uses the following controller functions:
 
