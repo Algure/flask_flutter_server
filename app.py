@@ -14,12 +14,12 @@ def render_page():
     return render_template('/index.html')
 
 
-@app.route('/app/')
+@app.route('/web/')
 def render_page_web():
     return render_template('index.html')
 
 
-@app.route('/app/<path:name>')
+@app.route('/web/<path:name>')
 def return_flutter_doc(name):
 
     datalist = str(name).split('/')
