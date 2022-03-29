@@ -54,6 +54,6 @@ def return_flutter_doc(name):
 
 Replace the `web` in the routes with `[foo]` and you're good to go.
 
-You can now access your app via your custom url the next time you run it locally or on a server.
+You can now access your app via your custom url `[home_domain]/[foo]` the next time you run it locally or on a server.
 
 
