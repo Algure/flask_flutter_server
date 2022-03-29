@@ -7,20 +7,19 @@ from flask import render_template
 app = Flask(__name__, )
 # app = Flask(__name__, template_folder='templates')
 
-
+FLUTTER_WEB_APP = 'templates'
 
 @app.route('/')
 def render_page():
     return render_template('/index.html')
 
-FLUTTER_WEB_APP = 'templates'
 
-@app.route('/web/')
+@app.route('/app/')
 def render_page_web():
     return render_template('index.html')
 
 
-@app.route('/web/<path:name>')
+@app.route('/app/<path:name>')
 def return_flutter_doc(name):
 
     datalist = str(name).split('/')
