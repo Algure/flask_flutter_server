@@ -11,7 +11,7 @@ FLUTTER_WEB_APP = 'templates'
 
 @app.route('/')
 def render_page():
-    return render_template('/index.html')
+    return render_template('index.html')
 
 
 @app.route('/web/')
